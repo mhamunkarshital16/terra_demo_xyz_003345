@@ -4,10 +4,10 @@ pipeline {
     stages {
 
         stage('Checkout Code') {
-            steps {
-                git 'https://github.com/mhamunkarshital16/terra_demo_xyz_003345.git'
-            }
-        }
+    steps {
+        git branch: 'main', url: 'https://github.com/mhamunkarshital16/terra_demo_xyz_003345.git'
+    }
+}
 
         stage('Terraform Init') {
             steps {
